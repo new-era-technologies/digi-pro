@@ -1,3 +1,31 @@
-h1 {
-    @include font(TT Hoves, normal, 300, 36px, 1.2, #ffffff);
+.header {
+    &__inner {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+    }
+}
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin-right: 60px;
+    }
+    &__link {
+        padding: 4px 0;
+        @include font(TT Hoves, normal, 400, 12px, 12px, #333333);
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    &__link:hover {
+        border-top: 1px solid #333333;
+        border-bottom: 1px solid #333333;
+    }
 }
