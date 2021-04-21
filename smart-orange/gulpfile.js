@@ -32,6 +32,11 @@ function html() {
     .pipe(browserSync.stream());
 }
 
+function fonts() {
+  return src('app/src/assets/fonts/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(dest('app/build/assets/fonts/'));
+}
+
 function css() {
   return src('app/src/scss/style.scss')
     .pipe(autoprefixer({
@@ -81,6 +86,7 @@ exports.default = function () {
     clean,
     // clearCache,
     images,
+    fonts,
     parallel(html, css, javascript)))
     .on('change', browserSync.reload);
 };
