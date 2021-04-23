@@ -1,0 +1,53 @@
+.company {
+    margin: 60px 0;
+    &__wrapper {
+        display: flex;
+        background: #fbfbfb;
+    }
+    &__inner {
+        &--images {
+            margin-left: 85px;
+        }
+        &--text {
+            margin-right: 70px;
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__list {
+        width: 600px;
+        height: 465px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+    }
+    &__title {
+        margin-top: 15px;
+        @include font(TT Hoves, normal, 300, 64px, 64px, #bdbdbd);
+    }
+    &__description {
+        margin-top: 20px;
+        @include font(TT Hoves, normal, 300, 16px, 25px, #000000);
+    }
+    &__link {
+        width: 222px;
+        height: 71px;
+        margin-top: 20px;
+        @include font(TT Hoves, normal, 400, 12px, 12px, #333333);
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        border: none;
+        outline: none;
+    }
+    &__link > img {
+        margin-left: 12px;
+    }
+}

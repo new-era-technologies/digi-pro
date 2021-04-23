@@ -2,11 +2,13 @@
 @import "base/fonts";
 @import "utils/mixins";
 @import "layout/header";
-@import "layout/main";
+@import "layout/company";
+@import "layout/projects";
+@import "layout/request";
 @import "layout/footer";
 
 .main-wrapper {
-    background: #E5E5E5;
+    background: #ffffff;
 }
 
 .container {
