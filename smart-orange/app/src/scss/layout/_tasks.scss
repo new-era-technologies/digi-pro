@@ -1,0 +1,27 @@
+.tasks {
+    margin: 30px 0 60px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner {
+        margin-top: 60px;
+    }
+    &__title {
+        @include font(TT Hoves, normal, 300, 64px, 64px, #bdbdbd);
+    }
+    &__text {
+        width: 575px;
+        margin-top: 20px;
+        @include font(TT Hoves, normal, 300, 22px, 36px, #333333);
+        display: flex;
+        align-items: center;
+        &--short {
+            width: 415px;
+        }
+    }
+    &__text > span {
+        margin-right: 30px;
+        @include font(SFPro Display, normal, 900, 200px, 239px, #F2F2F2);
+    }
+}
