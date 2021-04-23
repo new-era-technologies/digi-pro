@@ -1,0 +1,38 @@
+.projects {
+    margin: 60px 0;
+    &__title {
+        @include font(TT Hoves, normal, 300, 64px, 64px, #bdbdbd);
+    }
+    &__list {
+        margin-top: 30px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        margin-top: 30px;
+    }
+    &__item:hover {
+        opacity: 0.8;
+    }
+    &__link {
+        width: 222px;
+        height: 71px;
+        margin: 30px 0 0 auto;
+        @include font(TT Hoves, normal, 400, 12px, 12px, #FFFFFF);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background: #333333;
+    }
+    &__link > img {
+        margin-left: 12px;
+    }
+}
