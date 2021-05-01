@@ -12,11 +12,14 @@
         display: flex;
         flex-direction: column;
     }
-    &__input {
+    &__input,
+    &__textarea {
         width: 391px;
         height: 46px;
         margin-top: 10px;
         padding-left: 21px;
+        @include font(TT Hoves, normal, 400, 14px, 17px, #8d8d8d);
+        letter-spacing: 0.04em;
         display: flex;
         align-items: center;
         border: none;
@@ -26,5 +29,34 @@
     }
     &__input:first-of-type {
         margin-top: 0;
+    }
+    &__textarea {
+        height: 147px;
+        padding-top: 14px;
+        resize: none;
+    }
+    &__conf-text {
+        margin-top: 22px;
+        margin-left: 40px;
+        @include font(TT Hoves, normal, 400, 14px, 17px, #333333);
+        letter-spacing: 0.03em;
+    }
+    &__submit {
+        width: 222px;
+        height: 71px;
+        margin-top: 21px;
+        padding-left: 47px;
+        @include font(TT Hoves, normal, 400, 12px, 12px, #FFFFFF);
+        letter-spacing: 0.2em;
+        display: flex;
+        align-items: center;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        background: #333333;
+        cursor: pointer;
+    }
+    &__submit > img {
+        margin-left: 12px;
     }
 }
